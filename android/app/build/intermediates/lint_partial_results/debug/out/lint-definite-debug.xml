@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 7.4.2" type="incidents">
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="14"
+            column="9"
+            startOffset="460"
+            endLine="14"
+            endColumn="41"
+            endOffset="492"/>
+    </incident>
+
+    <incident
+        id="VisibleForTests"
+        severity="warning"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="${:app*debug*sourceProvider*1*javaDir*0}/com/bootstrap/ReactNativeFlipper.java"
+            line="54"
+            column="56"
+            startOffset="2618"
+            endLine="54"
+            endColumn="78"
+            endOffset="2640"/>
+    </incident>
+
+</incidents>
